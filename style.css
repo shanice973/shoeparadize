@@ -1,0 +1,66 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    /* Live internet image of a shoe so it works immediately */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 { font-size: 5rem; letter-spacing: 10px; margin-bottom: 10px; }
+
+.video-trigger {
+    margin-top: 30px;
+    padding: 20px 40px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.video-trigger:hover { background: #5d4037; border-color: #5d4037; }
+
+/* Video Overlay Styles */
+.video-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    display: none; /* Hidden until clicked */
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.video-wrapper {
+    width: 80%;
+    max-width: 800px;
+    border: 5px solid #5d4037; /* Chocolate Brown border */
+    box-shadow: 0 0 40px rgba(93, 64, 55, 0.7);
+    position: relative;
+}
+
+video { width: 100%; display: block; }
+
+.close-btn {
+    position: absolute;
+    top: 20px; right: 40px;
+    font-size: 40px; color: white; cursor: pointer;
+}
+
+.video-label {
+    position: absolute;
+    bottom: 10px; left: 15px;
+    font-size: 10px; color: #d7ccc8; letter-spacing: 2px;
+}

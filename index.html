@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Dancers | Premium Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="hero-section">
+        <div class="content-box">
+            <h1>SUPER DANCERS</h1>
+            <p>Experience the Rhythm</p>
+            
+            <div class="video-trigger" onclick="startShow()">
+                <span class="play-icon">▶</span>
+                <p>PLAY VIDEO WITH SOUND</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-overlay" id="videoOverlay">
+        <span class="close-btn" onclick="stopShow()">&times;</span>
+        
+        <div class="video-wrapper">
+            <video id="promoVideo" playsinline>
+                <source src="1000637053.mp4" type="video/mp4">
+            </video>
+            
+            <audio id="bgMusic">
+                <source src="music.mp3" type="audio/mpeg">
+            </audio>
+            
+            <div class="video-label">SUPER DANCERS EXCLUSIVE</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
